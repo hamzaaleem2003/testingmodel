@@ -6,3 +6,4 @@ langchain_pinecone
 google-auth
 langchain-google-genai
 python-dotenv
+sentence-transformers
