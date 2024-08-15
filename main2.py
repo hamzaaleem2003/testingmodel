@@ -1,21 +1,14 @@
 import streamlit as st
 import os
-import tempfile
-from langchain_community.document_loaders import UnstructuredExcelLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import PyMuPDFLoader
-from langchain_community.document_loaders import Docx2txtLoader
-from langchain_community.document_loaders import TextLoader
-from langchain_community.document_loaders.csv_loader import CSVLoader
+
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Pinecone
 from langchain_pinecone import PineconeVectorStore
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain.prompts import PromptTemplate
 from langchain.chains import  RetrievalQA
-from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 
 
